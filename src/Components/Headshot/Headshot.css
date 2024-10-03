@@ -1,0 +1,86 @@
+.headshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.headshot-img {
+    /* border-radius: 50%; */
+    height: 400px;
+    width: 400px;
+}
+
+.headshot-sections {
+    display: flex;
+    gap: 80px;
+}
+
+.headshot-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.headshot h1 {
+    text-align: center;
+    /* text-align: center; */
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.headshot-h1-span1 {
+    background: #fcce16;
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(252,206,22,1) 50%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.headshot-h1-span2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(238,166,30,1) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.headshot-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.headshot-contact {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: rgba(238,166,30,1);
+    cursor: pointer;
+}
+
+.headshot-contact:hover {
+    border: 2px solid white;
+}
+
+.headshot-resume {
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.headshot-resume:hover {
+    border-color: #B415FF;
+}
+
+.headshot-right {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
