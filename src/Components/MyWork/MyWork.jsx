@@ -1,28 +1,35 @@
-import "./MyWork.css";
-import { mywork_data } from "../../assets/mywork_data";
+import React from 'react';
+import './MyWork.css';
+
+const projects = [
+  {
+    title: 'Symbotic Co-op: Warehouse UX',
+    description: 'Streamlined operator interface, reduced task time by 15%.',
+    image: '/assets/symbotic-project.jpg',
+    link: 'https://your-notion-page/symbotic-warehouse-ux'
+  },
+  {
+    title: 'Symbotic Co-op: Inventory Dashboard',
+    description: 'Designed a modular dashboard for real-time tracking.',
+    image: '/assets/symbotic-dashboard.jpg',
+    link: 'https://your-notion-page/symbotic-inventory-dashboard'
+  }
+];
 
 export const MyWork = () => {
   return (
-    <div id="work" className="mywork">
-      <div className="mywork-title">
-        <h1>My Latest Work</h1>
-        {/* <img src='' alt='' /> */}
+    <section id="work" className="mywork">
+      <h2>My Work</h2>
+      <div className="project-grid">
+        {projects.map((project, index) => (
+          <div key={index} className="project-card">
+            <img src={project.image} alt={project.title} />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">Read More</a>
+          </div>
+        ))}
       </div>
-      <div className="mywork-container">
-        {mywork_data.map((work, index) => {
-          return (
-            <img
-              key={index}
-              style={{ height: "498px", width: "844px", paddingTop: "40px" }}
-              src={work.w_img}
-              alt=""
-            />
-          );
-        })}
-      </div>
-      <div className="mywork-showmore">
-        <p>Show More</p>
-      </div>
-    </div>
+    </section>
   );
 };
